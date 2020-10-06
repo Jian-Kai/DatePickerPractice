@@ -1,0 +1,32 @@
+
+.Block {
+  display: inline-block;
+  min-width: 24px;
+  height: 24px;
+  line-height: 24px;
+  border-radius: 2px;
+  color: rgb(0,0,0);
+  margin: 5px;
+  cursor: pointer;
+  &.disable{
+    background-color: rgb(192,192,192);
+  }
+  &.canHover{
+    &:hover{
+      background-color: rgb(192,192,192);
+      color: rgb(255,255,255);
+    }  
+  }
+  &.active{
+    background-color: rgb(255,0,0);
+    color: rgb(255,255,255);
+  }
+}
+
+.Dates {
+  display: flex;
+  border: 1px solid rgb(192,192,192);
+  width: calc(168px + (10px * 7) + 2px);
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
